@@ -51,7 +51,7 @@ public class BeatLine : MonoBehaviour
             lineRenderer.SetPosition(i, Pos);
 
 
-            Pos.y = (spectrum.MeanLevels[i] * -120)+5;
+            Pos.y = (spectrum.MeanLevels[i] * -120)-0.1f;
 
             BeatLinePoints[i].transform.position = Pos;
         }
@@ -64,7 +64,7 @@ public class BeatLine : MonoBehaviour
             lineRenderer.SetPosition(i, Pos);
 
 
-            Pos.y = (spectrum.MeanLevels[i] * +120)+5;
+            Pos.y = (spectrum.MeanLevels[i] * +120)-0.1f;
 
             BeatLinePoints[i].transform.position = Pos;
         }

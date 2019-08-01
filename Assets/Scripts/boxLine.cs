@@ -33,6 +33,29 @@ public class boxLine : MonoBehaviour
     private float time9;
     [SerializeField]
     private float time10;
+    [SerializeField]
+    private float time11;
+    [SerializeField]
+    private float time12;
+    [SerializeField]
+    private float time13;
+    [SerializeField]
+    private float time14;
+    [SerializeField]
+    private float time15;
+    [SerializeField]
+    private float time16;
+    [SerializeField]
+    private float time17;
+    [SerializeField]
+    private float time18;
+    [SerializeField]
+    private float time19;
+    [SerializeField]
+    private float time20;
+    [SerializeField]
+    private float time21;
+
 
     [SerializeField]
     private float moveTime0;
@@ -56,8 +79,28 @@ public class boxLine : MonoBehaviour
     private float moveTime9;
     [SerializeField]
     private float moveTime10;
-
-
+    [SerializeField]
+    private float moveTime11;
+    [SerializeField]
+    private float moveTime12;
+    [SerializeField]
+    private float moveTime13;
+    [SerializeField]
+    private float moveTime14;
+    [SerializeField]
+    private float moveTime15;
+    [SerializeField]
+    private float moveTime16;
+    [SerializeField]
+    private float moveTime17;
+    [SerializeField]
+    private float moveTime18;
+    [SerializeField]
+    private float moveTime19;
+    [SerializeField]
+    private float moveTime20;
+    [SerializeField]
+    private float moveTime21;
     //MeshRenderer meshRenderer;
 
 
@@ -72,7 +115,7 @@ public class boxLine : MonoBehaviour
 
         for (int i = 0; i < LineBox.Length; i++)
         {
-            LineBox[i] = (GameObject)Instantiate(PrefabLineBox, new Vector3(0f, -1.2f, 70 - (i*5)), Quaternion.identity,parent);
+            LineBox[i] = (GameObject)Instantiate(PrefabLineBox, new Vector3(0f, -1.2f, 120 - (i*5)), Quaternion.identity,parent);
             LineBox[i] = transform.GetChild(i).gameObject;
 
             //Debug.Log(LineBox[1]);
@@ -89,6 +132,18 @@ public class boxLine : MonoBehaviour
         var LB7 = LineBox[7].GetComponent<MeshRenderer>();
         var LB8 = LineBox[8].GetComponent<MeshRenderer>();
         var LB9 = LineBox[9].GetComponent<MeshRenderer>();
+        var LB10 = LineBox[10].GetComponent<MeshRenderer>();
+        var LB11 = LineBox[11].GetComponent<MeshRenderer>();
+        var LB12 = LineBox[12].GetComponent<MeshRenderer>();
+        var LB13 = LineBox[13].GetComponent<MeshRenderer>();
+        var LB14 = LineBox[14].GetComponent<MeshRenderer>();
+        var LB15 = LineBox[15].GetComponent<MeshRenderer>();
+        var LB16 = LineBox[16].GetComponent<MeshRenderer>();
+        var LB17 = LineBox[17].GetComponent<MeshRenderer>();
+        var LB18 = LineBox[18].GetComponent<MeshRenderer>();
+        var LB19 = LineBox[19].GetComponent<MeshRenderer>();
+        var LB20 = LineBox[20].GetComponent<MeshRenderer>();
+        var LB21 = LineBox[21].GetComponent<MeshRenderer>();
         //var LB10 = LineBox[10].GetComponent<MeshRenderer>();
 
 
@@ -103,7 +158,20 @@ public class boxLine : MonoBehaviour
         LB7.material.SetFloat("_time", time7);
         LB8.material.SetFloat("_time", time8);
         LB9.material.SetFloat("_time", time9);
-        //LB10.material.SetFloat("_time", time10);
+        LB10.material.SetFloat("_time", time10);
+        LB11.material.SetFloat("_time", time11);
+        LB12.material.SetFloat("_time", time12);
+        LB13.material.SetFloat("_time", time13);
+        LB14.material.SetFloat("_time", time14);
+        LB15.material.SetFloat("_time", time15);
+        LB16.material.SetFloat("_time", time16);
+        LB17.material.SetFloat("_time", time17);
+        LB18.material.SetFloat("_time", time18);
+        LB19.material.SetFloat("_time", time19);
+        LB20.material.SetFloat("_time", time20);
+        LB21.material.SetFloat("_time", time21);
+
+
 
 
         LB0.material.SetFloat("_moveTime", moveTime0);
@@ -116,8 +184,18 @@ public class boxLine : MonoBehaviour
         LB7.material.SetFloat("_moveTime", moveTime7);
         LB8.material.SetFloat("_moveTime", moveTime8);
         LB9.material.SetFloat("_moveTime", moveTime9);
-        //LB10.material.SetFloat("_moveTime", moveTime10);
-
+        LB10.material.SetFloat("_moveTime", moveTime10);
+        LB11.material.SetFloat("_moveTime", moveTime11);
+        LB12.material.SetFloat("_moveTime", moveTime12);
+        LB13.material.SetFloat("_moveTime", moveTime13);
+        LB14.material.SetFloat("_moveTime", moveTime14);
+        LB15.material.SetFloat("_moveTime", moveTime15);
+        LB16.material.SetFloat("_moveTime", moveTime16);
+        LB17.material.SetFloat("_moveTime", moveTime17);
+        LB18.material.SetFloat("_moveTime", moveTime18);
+        LB19.material.SetFloat("_moveTime", moveTime19);
+        LB20.material.SetFloat("_moveTime", moveTime20);
+        LB21.material.SetFloat("_moveTime", moveTime21);
         //Debug.Log(LineBox[0]);
         //Debug.Log(LineBox[1]);
         //Debug.Log(LineBox[2]);
