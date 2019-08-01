@@ -1,11 +1,14 @@
 ﻿<Properties StartupConfiguration="{3FFAC7FA-1C48-CB08-427A-A0425E626C0D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BeatLine.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/WaveSpan.cs">
     <Files>
-      <File FileName="Assets/Scripts/boxLine.cs" Line="113" Column="9" />
-      <File FileName="Assets/Scripts/BeatLine.cs" Line="52" Column="1" />
+      <File FileName="Assets/Scripts/WaveSpan.cs" Line="266" Column="10" />
+      <File FileName="Assets/Scripts/WayPoints.cs" />
+      <File FileName="Assets/Scripts/boxLine.cs" />
+      <File FileName="Assets/Scripts/BeatLine.cs" />
       <File FileName="Assets/Scripts/Box.cs" />
-      <File FileName="Assets/Scripts/Tapu.cs" Line="59" Column="1" />
+      <File FileName="Assets/Scripts/Tapu.cs" />
       <File FileName="Assets/Scripts/Ball.cs" />
+      <File FileName="Assets/Scripts/Sound/Music.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +16,8 @@
           <Node name="VR-test-5-Backup3-1-master" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="BeatLine.cs" selected="True" />
+                <Node name="Sound" expanded="True" />
+                <Node name="WaveSpan.cs" selected="True" />
               </Node>
             </Node>
           </Node>

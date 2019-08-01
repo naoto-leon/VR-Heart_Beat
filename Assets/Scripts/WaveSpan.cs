@@ -11,58 +11,261 @@ public class WaveSpan : MonoBehaviour
 
     public GameObject StarParticle;
 
+
+    /// <summary>
+    /// テスト
+    /// </summary>
+
+
+    float count = 0;
+
+
     // Update is called once per frame
     void Update()
     {
-        if (Music.IsJustChangedBeat())
-        {
-            
-            GameObject cube = Instantiate(Cubes[Random.Range(0, 4)], Points[Random.Range(0, 2)]);
-           
-            GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
-            Destroy(StPa, .5f);
-            cube.transform.localPosition = Vector3.zero;
-            cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+       
+        count = count + Time.deltaTime;
+        //Debug.Log(count);
 
-            //新しいparticle -1ようのを作れば　ダブル可能　（実証済みだがそこまでw猛者を感じない）
-            //GameObject cuben = Instantiate(Cubes[Random.Range(0, 2)], Points[Random.Range(3, 4)]);
-            //GameObject StPaa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
-            //Destroy(StPaa, .5f);
-            //cuben.transform.localPosition = Vector3.zero;
-            //cuben.transform.Rotate(transform.forward * 90, Random.Range(0, 4));
-        }
 
-        //for (int i = 0; i < Points.Length; i++)
+        //if (Music.IsJustChangedBeat())
         //{
-            //if (spectrum.MeanLevels[0]*100 < 1f)
-            //{
-            //    GameObject cube = Instantiate(Cubes[Random.Range(0, 2)], Points[0]);
-            //    cube.transform.localPosition = Vector3.zero;
-            //    cube.transform.Rotate(transform.forward * 90, Random.Range(0, 4));
 
-              
-            //}
-            //if (spectrum.MeanLevels[1] < 0.005f)
-            //{
-            //    GameObject cube = Instantiate(Cubes[Random.Range(0, 2)], Points[1]);
-            //    cube.transform.localPosition = Vector3.zero;
-            //    cube.transform.Rotate(transform.forward * 90, Random.Range(0, 4));
-            //}
-            //if (spectrum.MeanLevels[2] < 0.005f)
-            //{
-            //    GameObject cube = Instantiate(Cubes[Random.Range(0, 2)], Points[2]);
-            //    cube.transform.localPosition = Vector3.zero;
-            //    cube.transform.Rotate(transform.forward * 90, Random.Range(0, 4));
-            //}
-            //if (spectrum.MeanLevels[3] < 0.005f)
-            //{
-            //    GameObject cube = Instantiate(Cubes[Random.Range(0, 2)], Points[3]);
-            //    cube.transform.localPosition = Vector3.zero;
-            //    cube.transform.Rotate(transform.forward * 90, Random.Range(0, 4));
-            //}
+        //    GameObject cube = Instantiate(Cubes[Random.Range(0, 4)], Points[Random.Range(0, 2)]);
+
+        //    GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+        //    Destroy(StPa, .5f);
+        //    cube.transform.localPosition = Vector3.zero;
+        //    cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+        //}
+
+        if (Music.CurrentSection.Name == "Test1")
+        {
+
+
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 4)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
 
 
         }
+
+        if (Music.CurrentSection.Name == "Test2")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 2)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+        if (Music.CurrentSection.Name == "Test3")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 3)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+        if (Music.CurrentSection.Name == "Test4")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 3)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+        if (Music.CurrentSection.Name == "Test5")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 4)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+        if (Music.CurrentSection.Name == "Test6")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 2)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+        if (Music.CurrentSection.Name == "Test7")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 3)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+        if (Music.CurrentSection.Name == "Test8")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 3)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+        if (Music.CurrentSection.Name == "Test9")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 2)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+        if (Music.CurrentSection.Name == "Test10")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 4)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+        if (Music.CurrentSection.Name == "Test11")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 2)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+        if (Music.CurrentSection.Name == "Test12")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 3)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+        if (Music.CurrentSection.Name == "Test13")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                GameObject cube = Instantiate(Cubes[Random.Range(0, 4)], Points[Random.Range(0, 2)]);
+
+                GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                Destroy(StPa, .5f);
+                cube.transform.localPosition = Vector3.zero;
+                cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+        if (Music.CurrentSection.Name == "Test14")
+        {
+            if (Music.IsJustChangedBeat())
+            {
+
+                //GameObject cube = Instantiate(Cubes[Random.Range(0, 0)], Points[Random.Range(0, 2)]);
+
+                //GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
+                //Destroy(StPa, .5f);
+                //cube.transform.localPosition = Vector3.zero;
+                //cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
+
+            }
+
+        }
+
+    }
 
 
 
