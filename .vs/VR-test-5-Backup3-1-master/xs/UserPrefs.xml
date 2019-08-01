@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{3FFAC7FA-1C48-CB08-427A-A0425E626C0D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tapu.cs">
+    <Files>
+      <File FileName="Assets/Scripts/boxLine.cs" Line="75" Column="65" />
+      <File FileName="Assets/Scripts/BeatLine.cs" Line="34" Column="1" />
+      <File FileName="Assets/Scripts/Tapu.cs" Line="30" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="VR-test-5-Backup3-1-master" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Tapu.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2958c841-716b-4abd-96b9-e2e258450f5a" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
