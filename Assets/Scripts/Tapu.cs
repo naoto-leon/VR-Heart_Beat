@@ -10,7 +10,7 @@ public class Tapu : MonoBehaviour
     public GameObject HeartEfect;
     public static bool TapuEect;
 
-    public Transform HeartSize; 
+    public Transform HeartSize;
 
 
     Transform trans;
@@ -32,19 +32,32 @@ public class Tapu : MonoBehaviour
     // Update is called once per frame
    public void Update()
     {
+        var localScale = HeartSize.localScale;
+
         if (TapuEect == true)
         {
             meshRenderer.material.SetFloat("_TapuTapuHigh", Player.Point);
             GameObject HeartPact = (GameObject)Instantiate(HeartEfect, transform.position, transform.rotation);
             Destroy(HeartPact, .1f);
 
+
+
+            //var localScale = HeartSize.localScale;
+            localScale = Vector3.Lerp(localScale, new Vector3(5f, 5f, 5f), Time.deltaTime * 3);
+            HeartSize.localScale = localScale;
+
             TapuEect = false;
 
-            var localScale = HeartSize.localScale;
+        }
+        else
+        {
+            localScale = Vector3.Lerp(localScale, new Vector3(2f, 2f, 2f), Time.deltaTime * 3);
+            HeartSize.localScale = localScale;
 
-
+            return;
         }
 
 
-    }
+
+        }
 }
