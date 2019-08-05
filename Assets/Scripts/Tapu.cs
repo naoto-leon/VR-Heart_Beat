@@ -43,7 +43,7 @@ public class Tapu : MonoBehaviour
 
 
             //var localScale = HeartSize.localScale;
-            localScale = Vector3.Lerp(localScale, new Vector3(6f, 6f, 6f), Time.deltaTime * 4);
+            localScale = Vector3.Lerp(localScale, new Vector3(10f, 10f, 10f), Time.deltaTime * 4);
             HeartSize.localScale = localScale;
 
             TapuEect = false;

@@ -119,7 +119,7 @@ public class Point_Laser : MonoBehaviour
 
                 GameObject destroypact = (GameObject)Instantiate(DestroyEfect, hitInfo.transform.position, hitInfo.transform.rotation);
 
-                Destroy(destroypact,.5f);
+                Destroy(destroypact,.9f);
                 Destroy(hitInfo.transform.gameObject);
                 Player.Combo++;
                 Player.Point+= 0.005f;
@@ -136,7 +136,7 @@ public class Point_Laser : MonoBehaviour
 
                 GameObject destroypact = (GameObject)Instantiate(DestroyEfect, hitInfo.transform.position, hitInfo.transform.rotation);
 
-                Destroy(destroypact, .5f);
+                Destroy(destroypact, .9f);
 
                 Destroy(hitInfo.transform.gameObject);
                 Player.Combo++;

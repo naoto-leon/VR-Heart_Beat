@@ -11,6 +11,9 @@ public class boxLine : MonoBehaviour
     public GameObject PrefabLineBox;
     public GameObject[] LineBox;
 
+    //[SerializeField]
+    //private float[] time;
+
     [SerializeField]
     private float time0;
     [SerializeField]
@@ -58,6 +61,21 @@ public class boxLine : MonoBehaviour
 
 
     [SerializeField]
+    private float time22;
+    [SerializeField]
+    private float time23;
+    [SerializeField]
+    private float time24;
+    [SerializeField]
+    private float time25;
+    [SerializeField]
+    private float time26;
+
+
+    //[SerializeField]
+    //private float[] moveTime;
+
+    [SerializeField]
     private float moveTime0;
     [SerializeField]
     private float moveTime1;
@@ -101,6 +119,20 @@ public class boxLine : MonoBehaviour
     private float moveTime20;
     [SerializeField]
     private float moveTime21;
+
+    [SerializeField]
+    private float moveTime22;
+    [SerializeField]
+    private float moveTime23;
+    [SerializeField]
+    private float moveTime24;
+    [SerializeField]
+    private float moveTime25;
+    [SerializeField]
+    private float moveTime26;
+
+
+
     //MeshRenderer meshRenderer;
 
 
@@ -110,7 +142,8 @@ public class boxLine : MonoBehaviour
         var parent = this.transform;
         
         LineBox = new GameObject[NUM];
-        
+
+
         //meshRenderer = GetComponent<MeshRenderer>();
 
         for (int i = 0; i < LineBox.Length; i++)
@@ -120,7 +153,14 @@ public class boxLine : MonoBehaviour
 
             //Debug.Log(LineBox[1]);
 
+            //var LB = LineBox[i].GetComponent<MeshRenderer>();
+
+
+            //LB.material.SetFloat("_time", time[i]);
+            //LB.material.SetFloat("_moveTime", moveTime[i]);
         }
+
+
 
         var LB0 = LineBox[0].GetComponent<MeshRenderer>();
         var LB1 = LineBox[1].GetComponent<MeshRenderer>();
@@ -144,9 +184,12 @@ public class boxLine : MonoBehaviour
         var LB19 = LineBox[19].GetComponent<MeshRenderer>();
         var LB20 = LineBox[20].GetComponent<MeshRenderer>();
         var LB21 = LineBox[21].GetComponent<MeshRenderer>();
-        //var LB10 = LineBox[10].GetComponent<MeshRenderer>();
 
-
+        var LB22 = LineBox[22].GetComponent<MeshRenderer>();
+        var LB23 = LineBox[23].GetComponent<MeshRenderer>();
+        var LB24 = LineBox[24].GetComponent<MeshRenderer>();
+        var LB25 = LineBox[25].GetComponent<MeshRenderer>();
+        var LB26 = LineBox[26].GetComponent<MeshRenderer>();
 
         LB0.material.SetFloat("_time", time0);
         LB1.material.SetFloat("_time", time1);
@@ -170,6 +213,12 @@ public class boxLine : MonoBehaviour
         LB19.material.SetFloat("_time", time19);
         LB20.material.SetFloat("_time", time20);
         LB21.material.SetFloat("_time", time21);
+
+        LB22.material.SetFloat("_time", time22);
+        LB23.material.SetFloat("_time", time23);
+        LB24.material.SetFloat("_time", time24);
+        LB25.material.SetFloat("_time", time25);
+        LB26.material.SetFloat("_time", time26);
 
 
 
@@ -196,9 +245,13 @@ public class boxLine : MonoBehaviour
         LB19.material.SetFloat("_moveTime", moveTime19);
         LB20.material.SetFloat("_moveTime", moveTime20);
         LB21.material.SetFloat("_moveTime", moveTime21);
-        //Debug.Log(LineBox[0]);
-        //Debug.Log(LineBox[1]);
-        //Debug.Log(LineBox[2]);
+
+        LB22.material.SetFloat("_moveTime", moveTime22);
+        LB23.material.SetFloat("_moveTime", moveTime23);
+        LB24.material.SetFloat("_moveTime", moveTime24);
+        LB25.material.SetFloat("_moveTime", moveTime25);
+        LB26.material.SetFloat("_moveTime", moveTime26);
+
 
     }
 

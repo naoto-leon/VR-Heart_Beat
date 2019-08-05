@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{3FFAC7FA-1C48-CB08-427A-A0425E626C0D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/WaveSpan.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tapu.cs">
     <Files>
       <File FileName="Assets/Scripts/WaveSpan.cs" Line="266" Column="10" />
       <File FileName="Assets/Scripts/WayPoints.cs" />
       <File FileName="Assets/Scripts/boxLine.cs" />
       <File FileName="Assets/Scripts/BeatLine.cs" />
       <File FileName="Assets/Scripts/Box.cs" />
-      <File FileName="Assets/Scripts/Tapu.cs" />
+      <File FileName="Assets/Scripts/Tapu.cs" Line="50" Column="1" />
       <File FileName="Assets/Scripts/Ball.cs" />
-      <File FileName="Assets/Scripts/Sound/Music.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Sound/Music.cs" />
+      <File FileName="Assets/Scripts/Point_Laser.cs" Line="142" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +18,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Sound" expanded="True" />
-                <Node name="WaveSpan.cs" selected="True" />
+                <Node name="Tapu.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2958c841-716b-4abd-96b9-e2e258450f5a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8acf909f-d672-497f-bf1f-c76a82b63527" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
