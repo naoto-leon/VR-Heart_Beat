@@ -51,6 +51,7 @@ public class WaveSpan : MonoBehaviour
 
                 GameObject StPa = (GameObject)Instantiate(StarParticle, cube.transform.position, cube.transform.rotation);
                 Destroy(StPa, .5f);
+
                 cube.transform.localPosition = Vector3.zero;
                 cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
 

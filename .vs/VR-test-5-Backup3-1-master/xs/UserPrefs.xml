@@ -1,17 +1,9 @@
 ﻿<Properties StartupConfiguration="{3FFAC7FA-1C48-CB08-427A-A0425E626C0D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/boxLine.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/WaveSpanNotMusicSc.cs">
     <Files>
-      <File FileName="Assets/Scripts/WaveSpan.cs" Line="266" Column="10" />
-      <File FileName="Assets/Scripts/WayPoints.cs" />
-      <File FileName="Assets/Scripts/boxLine.cs" Line="162" Column="64" />
-      <File FileName="Assets/Scripts/BeatLine.cs" />
-      <File FileName="Assets/Scripts/Box.cs" />
-      <File FileName="Assets/Scripts/Tapu.cs" />
-      <File FileName="Assets/Scripts/Ball.cs" />
-      <File FileName="Assets/Scripts/Sound/Music.cs" />
-      <File FileName="Assets/Scripts/CamColor.cs" />
-      <File FileName="Assets/Scripts/Point_Laser.cs" />
-      <File FileName="Assets/Scripts/BoxSecond.cs" />
+      <File FileName="Assets/Scripts/WaveSpan.cs" Line="55" Column="61" />
+      <File FileName="Assets/Scripts/WaveSpanNotMusicSc.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/Ardino/ServerTest.cs" Line="18" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,18 +11,31 @@
           <Node name="VR-test-5-Backup3-1-master" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
+                <Node name="Ardino" expanded="True" />
                 <Node name="Sound" expanded="True" />
-                <Node name="boxLine.cs" selected="True" />
+                <Node name="WaveSpanNotMusicSc.cs" selected="True" />
+              </Node>
+              <Node name="uOSC-master" expanded="True">
+                <Node name="Assets" expanded="True">
+                  <Node name="uOSC" expanded="True">
+                    <Node name="Scripts" expanded="True" />
+                  </Node>
+                </Node>
               </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="VR-test-5-Backup3-1-master" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8acf909f-d672-497f-bf1f-c76a82b63527" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="57d60c07-e44c-4cbf-886f-f0a1623b7c7e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

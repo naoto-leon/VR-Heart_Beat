@@ -166,8 +166,8 @@ public class boxLine : MonoBehaviour
             //LB.material.SetFloat("_moveTime", moveTime[i]);
 
             var LB = BoxLine[i].GetComponent<MeshRenderer>();
-            LB.material.SetFloat("_time", i * .4f);
-            LB.material.SetFloat("_moveTime", i *.15f);
+            LB.material.SetFloat("_time", (i+1) * .4f);
+            LB.material.SetFloat("_moveTime", (i+1) *.15f);
 
         }
 
