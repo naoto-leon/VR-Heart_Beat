@@ -665,6 +665,7 @@
     <Compile Include="Assets\Scripts\boxLine.cs" />
     <Compile Include="Assets\Scripts\Boxlow.cs" />
     <Compile Include="Assets\Scripts\BoxSecond.cs" />
+    <Compile Include="Assets\Scripts\bpmText.cs" />
     <Compile Include="Assets\Scripts\CamColor.cs" />
     <Compile Include="Assets\Scripts\Destoroy.cs" />
     <Compile Include="Assets\Scripts\Og_Player.cs" />

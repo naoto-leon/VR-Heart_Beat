@@ -15,15 +15,16 @@ ScriptsOnlyBuild:
     - Point_Laser
     - Point_Laser_Start
     - SerialHandler
-    - SerialLight
     - ServerTest
     - SpectramSounded
     - Tapu
     - Test
     - WaveSpan
+    - WaveSpanNotMusicSc
     - WayPoints
     - WayPointsSecond
     - boxLine
+    - bpmText
     - textmepro
     - uOSC.uOscServer
     Oculus.VR.dll:
@@ -49,7 +50,6 @@ ScriptsOnlyBuild:
     Unity.RenderPipelines.Lightweight.Runtime.dll:
     - UnityEngine.Rendering.LWRP.ForwardRendererData
     - UnityEngine.Rendering.LWRP.LightweightRenderPipelineAsset
-    - UnityEngine.Rendering.LWRP.LightweightRenderPipelineEditorResources
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -107,83 +107,85 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9516}
+      Script: {instanceID: 9520}
     - Class: 114
-      Script: {instanceID: 9648}
+      Script: {instanceID: 9652}
     - Class: 114
-      Script: {instanceID: 9674}
+      Script: {instanceID: 9678}
     - Class: 114
-      Script: {instanceID: 9714}
+      Script: {instanceID: 9718}
     - Class: 114
-      Script: {instanceID: 9746}
+      Script: {instanceID: 9750}
     - Class: 114
-      Script: {instanceID: 9880}
+      Script: {instanceID: 9890}
     - Class: 114
-      Script: {instanceID: 9882}
+      Script: {instanceID: 9892}
     - Class: 114
-      Script: {instanceID: 10006}
+      Script: {instanceID: 10016}
     - Class: 114
-      Script: {instanceID: 10012}
+      Script: {instanceID: 10022}
     - Class: 114
-      Script: {instanceID: 10018}
+      Script: {instanceID: 10028}
     - Class: 114
-      Script: {instanceID: 10062}
+      Script: {instanceID: 10072}
     - Class: 114
-      Script: {instanceID: 10064}
+      Script: {instanceID: 10074}
     - Class: 114
-      Script: {instanceID: 10292}
+      Script: {instanceID: 10302}
     - Class: 114
-      Script: {instanceID: 10360}
+      Script: {instanceID: 10372}
     - Class: 114
-      Script: {instanceID: 10430}
+      Script: {instanceID: 10444}
     - Class: 114
-      Script: {instanceID: 10596}
+      Script: {instanceID: 10616}
     - Class: 114
-      Script: {instanceID: 10630}
+      Script: {instanceID: 10650}
     - Class: 114
-      Script: {instanceID: 10642}
+      Script: {instanceID: 10662}
     - Class: 114
-      Script: {instanceID: 10740}
+      Script: {instanceID: 10760}
     - Class: 114
-      Script: {instanceID: 10814}
+      Script: {instanceID: 10834}
     - Class: 114
-      Script: {instanceID: 11136}
+      Script: {instanceID: 11080}
     - Class: 114
-      Script: {instanceID: 11196}
+      Script: {instanceID: 11160}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11220}
     - Class: 114
-      Script: {instanceID: 11556}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11752}
+      Script: {instanceID: 11438}
     - Class: 114
-      Script: {instanceID: 12044}
+      Script: {instanceID: 11582}
     - Class: 114
-      Script: {instanceID: 12328}
+      Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 12390}
+      Script: {instanceID: 12070}
     - Class: 114
-      Script: {instanceID: 12678}
+      Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 12694}
+      Script: {instanceID: 12358}
     - Class: 114
-      Script: {instanceID: 12754}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 12796}
+      Script: {instanceID: 12716}
     - Class: 114
-      Script: {instanceID: 12800}
+      Script: {instanceID: 12732}
     - Class: 114
-      Script: {instanceID: 12818}
+      Script: {instanceID: 12792}
     - Class: 114
-      Script: {instanceID: 13484}
+      Script: {instanceID: 12836}
     - Class: 114
-      Script: {instanceID: 13494}
+      Script: {instanceID: 12840}
     - Class: 114
-      Script: {instanceID: 13840}
+      Script: {instanceID: 12858}
     - Class: 114
-      Script: {instanceID: 20666}
+      Script: {instanceID: 13538}
     - Class: 114
-      Script: {instanceID: 21036}
+      Script: {instanceID: 13888}
+    - Class: 114
+      Script: {instanceID: 50148}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -246,23 +248,23 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9648}
+      Script: {instanceID: 9652}
     - Class: 114
-      Script: {instanceID: 9882}
+      Script: {instanceID: 9892}
     - Class: 114
-      Script: {instanceID: 10978}
+      Script: {instanceID: 10998}
     - Class: 114
-      Script: {instanceID: 11136}
-    - Class: 114
-      Script: {instanceID: 12390}
+      Script: {instanceID: 11160}
     - Class: 114
       Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 13326}
+      Script: {instanceID: 12450}
     - Class: 114
-      Script: {instanceID: 13840}
+      Script: {instanceID: 13370}
     - Class: 114
-      Script: {instanceID: 13850}
+      Script: {instanceID: 13888}
+    - Class: 114
+      Script: {instanceID: 13898}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -272,6 +274,10 @@ ScriptsOnlyBuild:
     - Class: 136
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1026,6 +1032,12 @@ ScriptsOnlyBuild:
     className: OvrAvatarSDKManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uOSC
+    className: ClientTest
+  - hash:
+      serializedVersion: 2
       Hash: e82c0521cdfe8cb6a168ef7208a98d4a
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -1372,6 +1384,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OvrAvatarComponent
+  - hash:
+      serializedVersion: 2
+      Hash: d7da825baf625257df1121988307f7eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WaveSpanNotMusicSc
   - hash:
       serializedVersion: 2
       Hash: 0077fc8e4fbae67f80e80ebd534de5a0
@@ -1890,6 +1908,12 @@ ScriptsOnlyBuild:
     className: TeleportOrientationHandlerHMD
   - hash:
       serializedVersion: 2
+      Hash: f9a984b76d49201b5c2856d4420d3f29
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uOSC
+    className: uOscServer
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: NoteEditor.Presenter
@@ -2274,6 +2298,12 @@ ScriptsOnlyBuild:
     className: ObservableTrigger2DTrigger
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uOSC
+    className: ClientBundleTest
+  - hash:
+      serializedVersion: 2
       Hash: 91d133055e1871adeb6ec587be529f76
     assemblyName: Assembly-CSharp.dll
     namespaceName: NoteEditor.GLDrawing
@@ -2326,6 +2356,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UniRx.Triggers
     className: ObservablePointerDownTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 4ce15e99c635d2567873d27549d1f16f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ServerTest
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2682,6 +2718,12 @@ ScriptsOnlyBuild:
     className: ONSPPropagationMaterial
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uOSC
+    className: ServerTest
+  - hash:
+      serializedVersion: 2
       Hash: 82a3367dddb8826b8006b06edf8b48c9
     assemblyName: Assembly-CSharp.dll
     namespaceName: NoteEditor.Presenter
@@ -2768,6 +2810,12 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
+    namespaceName: uOSC
+    className: ServerBlobTest
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
     namespaceName: UniRx.Triggers
     className: ObservableDeselectTrigger
   - hash:
@@ -2788,6 +2836,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UniRx.Examples
     className: Sample01_ObservableWWW
+  - hash:
+      serializedVersion: 2
+      Hash: 6a718072c9577c3eb5545ea33109e545
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uOSC
+    className: uOscClient
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -3216,6 +3270,12 @@ ScriptsOnlyBuild:
     className: TeleportDestination
   - hash:
       serializedVersion: 2
+      Hash: 8566fcc93050d6c4af847074c2e55a7b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uOSC
+    className: ClientBlobTest
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -3492,52 +3552,10 @@ ScriptsOnlyBuild:
     className: ConvertUtils
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: uOSC
-    className: ClientTest
-  - hash:
-      serializedVersion: 2
-      Hash: f9a984b76d49201b5c2856d4420d3f29
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: uOSC
-    className: uOscServer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: uOSC
-    className: ClientBundleTest
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: uOSC
-    className: ServerTest
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: uOSC
-    className: ServerBlobTest
-  - hash:
-      serializedVersion: 2
-      Hash: 6a718072c9577c3eb5545ea33109e545
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: uOSC
-    className: uOscClient
-  - hash:
-      serializedVersion: 2
-      Hash: 8566fcc93050d6c4af847074c2e55a7b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: uOSC
-    className: ClientBlobTest
-  - hash:
-      serializedVersion: 2
-      Hash: 4ce15e99c635d2567873d27549d1f16f
+      Hash: a78722ac72d0f43cee3c272751da17c6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ServerTest
+    className: bpmText
   platform: 13
   scenePathNames:
   - Assets/Scenes/Start.unity

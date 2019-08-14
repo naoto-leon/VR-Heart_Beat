@@ -6,7 +6,9 @@ using uOSC;
 public class WaveSpanNotMusicSc : MonoBehaviour
 {
     public float timer;
-    public float beat;
+
+    [SerializeField]
+    public  float beat;
 
 
     public GameObject[] Cubes;
@@ -14,11 +16,13 @@ public class WaveSpanNotMusicSc : MonoBehaviour
 
     public GameObject StarParticle;
 
+    [SerializeField]
+    public static int heartBeat;
+
     // Start is called before the first frame update
     void Start()
     {
-        //beat = 60 / 150;
-
+       
 
         var server = GetComponent<uOscServer>();
         server.onDataReceived.AddListener(OnDataReceived);
@@ -39,11 +43,24 @@ public class WaveSpanNotMusicSc : MonoBehaviour
             else if (value is string) msg += (string)value;
             else if (value is byte[]) msg += "byte[" + ((byte[])value).Length + "]";
 
-            Debug.Log(value);
+            //Debug.Log(value);
             //text.text = (string)value;
 
-            beat = (float)value;
+            heartBeat = (int)value;
+
+            if (heartBeat < 0)
+            {
+                return;
+            }
+
+
+            beat = (60 / (float)heartBeat);
+
+            //Debug.Log (beat);
+
+
         }
+
 
 
     }
@@ -66,7 +83,7 @@ public class WaveSpanNotMusicSc : MonoBehaviour
             cube.transform.localPosition = Vector3.zero;
             cube.transform.Rotate(transform.forward * 90, Random.Range(0, 2));
 
-            }
+        }
         timer += Time.deltaTime;
 
     }
