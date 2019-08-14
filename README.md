@@ -1,7 +1,7 @@
 # VR-test-4-Backup2-2
-VR Oculus-Go Beatsaver 
+VR Oculus-Go make Beatsaver 
 
-#### Oculus GoでBeatSaverを作りました。初めてのVR開発でわりかし手間取ったのと時間を掛けたので詳細に記録します。
+#### Ardinoで人間の心拍数を取得し、そのBPMを使ってOculus GoでBeatSaverを作りました。初めてのVR開発でわりかし手間取ったのと時間を掛けたので詳細に記録します。
 ##### [YouTube](https://youtu.be/9nsiCdtRgEo)
 ![VR_GIF1](https://user-images.githubusercontent.com/43961147/61991270-e2493480-b088-11e9-8c0b-e08919d54cd5.gif)
 
@@ -35,6 +35,12 @@ VR Oculus-Go Beatsaver
 #### JDK 
 □ java version "1.8.0_211"  
 
+#### Arduino 
+□ Leonardo 
+
+#### PulseSensor 
+
+
 大事なのはUnityとOculas-Goのスペックと設定。  
 まず、3DofというのはVR空間において首の動きのみ連動するという事。（対して屈んだりの動作にも連動している機種を6Dofという）  
 正規のBeat-Saverは6Dof対応。  
@@ -43,7 +49,7 @@ VR Oculus-Go Beatsaver
 なお、スタンドアローン型？(Pcとの連動で動くやつじゃないやつ)。
 #### 自分なりにまとめると、スマホのスペックでVRの挙動を実装しなくてはいけない。  
 これがかなりネック  
-Pc開発時でのFpsが150オーバーにも関わらず実機で確認すると挙動がガタツク場合がある。  
+Pc開発時でのFpsが200オーバーにも関わらず実機で確認すると挙動がガタツク場合がある。  
 
 ***
 
@@ -76,6 +82,10 @@ Pc開発時でのFpsが150オーバーにも関わらず実機で確認すると
  なんとか改良したかった。  
  
  Canvasの設定をWorld座標にする事で解決した。（FPSでのUIの挙動を考えれば上記の挙動は自然である）
+
+#### □ Arduino(Leonardo)がシリアルモニタを開かないとunityへ通信されない事に関して。    
+ 
+  当初は
 
 ***
 
