@@ -155,7 +155,7 @@ public class boxLine : MonoBehaviour
             //LineBox[i] = transform.GetChild(i).gameObject;
 
 
-            BoxLine.Add((GameObject)Instantiate(PrefabLineBox, new Vector3(0f, -1.2f, 130 - (i * 5)), Quaternion.identity, parent));
+            BoxLine.Add((GameObject)Instantiate(PrefabLineBox, new Vector3(0f, -1.2f, 180 - (i * 7)), Quaternion.identity, parent));
 
             //Debug.Log(LineBox[1]);
 
