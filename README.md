@@ -116,6 +116,12 @@ Pc開発時でのFpsが200オーバーにも関わらず実機で確認すると
 今回はこのBPMに心拍数を持ってくる。
 
 #### □方法その１
+<img width="535" alt="vj通信1" src="https://user-images.githubusercontent.com/43961147/63077581-be845a80-bf73-11e9-967d-9f20d0a16e35.png">
+
+クラウドプラットフォームであるmilkkokoaを使っての実装を試みた。  
+milkkokoaはArduinoから直接通信可能な環境があり、使用例も公式で紹介されている。  
+
+自身   
 
 
 
