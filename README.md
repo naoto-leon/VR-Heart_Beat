@@ -142,6 +142,21 @@ milkkokoaはArduinoから直接通信可能な環境があり、使用例も公�
 
  ##### [ HID デバイスに関して詳しくはここ](https://ht-deko.com/arduino/hid.html)
 
+#### □方法その３
+<img width="532" alt="vj通信3" src="https://user-images.githubusercontent.com/43961147/63081438-8fbfb180-bf7e-11e9-8d96-e9835b696eb7.png">
+
+最終的な方法は、OSC通信ようにunityで別プログラムを作り、OculasGoに送るというもの。　
+
+□導入にあたりInspectorのOtherのSettingsにある「Api Compatibility Level」を「.NET 2.0」にする必要があるのだが、Unityのバージョンアップに伴い
+　使用が変わり「.NET 2.0」が無くなった。試しに「.NET 4.0」を使用したらエラーが無くなった。
+ 
+□
+
+ ##### Arduinoと
+
+ ##### [参考arduino](http://rikoubou.hatenablog.com/entry/2018/01/16/175113)
+ ##### [参考OSC]( http://tips.hecomi.com/entry/2017/08/20/193823)
+
 ***
 
 ### VRとしての組み立て　
