@@ -150,13 +150,48 @@ milkkokoaはArduinoから直接通信可能な環境があり、使用例も公�
 □導入にあたりInspectorのOtherのSettingsにある「Api Compatibility Level」を「.NET 2.0」にする必要があるのだが、Unityのバージョンアップに伴い
 　使用が変わり「.NET 2.0」が無くなった。試しに「.NET 4.0」を使用したらエラーが無くなった。
  
-□
+□Oculas GoのIPアドレスを調べるのにadbコマンドを打つ必要があり(なぜユーザアビリティに関する設定画面をOculasGo内に作らなかったのか。。。)苦労した。
 
- ##### Arduinoと
+□ Arduinoから送られてくる情報がintなのかstringなのか分からずキャストに少し苦労した。
 
+ ##### PulseSensor~Arduinoとの連携に関して  
+ 基本的にはPulseSensorの公式HPに使用例が書いてあるので、ほぼ丸写し。　
+ 
+     #define USE_ARDUINO_INTERRUPTS true  
+    #include <PulseSensorPlayground.h>       
+
+    //  Variables
+    const int PulseWire = 0;            
+    int Threshold = 550;           
+                                                                                     
+    PulseSensorPlayground pulseSensor;  
+
+    void setup() {   
+
+      Serial.begin(9600);          // For Serial Monitor
+
+      // Configure the PulseSensor object, by assigning our variables to it. 
+      pulseSensor.analogInput(PulseWire);   
+      pulseSensor.setThreshold(Threshold);   
+
+      // Double-check the "pulseSensor" object was created and "began" seeing a signal. 
+      if (pulseSensor.begin()) {
+       Serial.println("We created a pulseSensor Object !");  //This prints one time at Arduino power-up,  or on Arduino reset.  
+    }
+    }
+    void loop() {
+
+    int myBPM = pulseSensor.getBeatsPerMinute();  
+                                              
+    if (pulseSensor.sawStartOfBeat()) {            
+     Serial.println(myBPM);                      
+    }
+      delay(20);                   
+    }
+ 
  ##### [参考arduino](http://rikoubou.hatenablog.com/entry/2018/01/16/175113)
  ##### [参考OSC]( http://tips.hecomi.com/entry/2017/08/20/193823)
-
+##### [PulseSensor]( https://pulsesensor.com)
 ***
 
 ### VRとしての組み立て　
