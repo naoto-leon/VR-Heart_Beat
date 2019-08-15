@@ -102,7 +102,21 @@ Pc開発時でのFpsが200オーバーにも関わらず実機で確認すると
  
 #### □BPMを使った基本の設計  
  
-<img width="330" alt="VR1" src="https://user-images.githubusercontent.com/43961147/61994258-83e57b80-b0b3-11e9-9c68-52176af468cc.png">
+ 基本の設計としてはBPMを60で割り(60/bpm)それを繰り返す中に処理をさせると言うもの。
+ 
+    beat = 60/BPM
+ 
+         if (timer > beat)
+        {
+            timer -= beat;
+            [[処理]]
+      }
+           timer += Time.deltaTime;
+
+今回はこのBPMに心拍数を持ってくる。
+
+#### □方法その１
+
 
 
 ***
