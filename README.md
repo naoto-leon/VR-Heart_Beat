@@ -128,8 +128,19 @@ milkkokoaはArduinoから直接通信可能な環境があり、使用例も公�
 
 
 #### □方法その２
+<img width="538" alt="vj通信2" src="https://user-images.githubusercontent.com/43961147/63078713-60f20d00-bf77-11e9-86ed-b1af55e5dec2.png">
 
+二つ目に試した事はOculasGoとarduinoを充電ケーブルを使い直接連携させる方法である。  
+これはTwitterで試している人を偶々見つけた為自身でもやってみた試みである。　
 
+理論的にはLeonnarudoとOculasGoがHIDデバイスの互換性がある為可能っぽい。
+
+結果は失敗で、理由は上記に挙げたLeonarudoによるエラーである。  
+恐らくこのエラー(シリアルモニタを開かなければ動作が始まらない問題)がなければ一番手軽かつスムーズな動作が実現できる方法だと思う。  
+
+有料のアセットを購入した際は再チャレンジしたい。
+
+ ##### [ HID デバイスに関して詳しくはここ](https://ht-deko.com/arduino/hid.html)
 
 ***
 
