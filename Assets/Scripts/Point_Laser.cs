@@ -42,13 +42,17 @@ public class Point_Laser : MonoBehaviour
     //Efect 
 
     public GameObject DestroyEfect;
- 
-    //
-    //
-    
-    //
 
 
+    //TEST KASOKUDO 
+
+    public Text accText;
+
+    //public Text accY;
+    //public Text accx;
+
+    public Text accyy;
+    public Text accxx;
 
     // コントローラー
     private Transform Pointer
@@ -75,7 +79,7 @@ public class Point_Laser : MonoBehaviour
     private void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
-       
+     
     }
 
 
@@ -86,6 +90,53 @@ public class Point_Laser : MonoBehaviour
 
         // コントローラーを取得
         var pointer = Pointer;//var=transform pointer 
+
+        //    //TEST KASOKUDO 
+        OVRInput.Controller activeController = OVRInput.GetActiveController();
+        Vector3 angAcc = OVRInput.GetLocalControllerAngularAcceleration(activeController);
+
+        accText.text = "Acc : " + angAcc;
+
+        //if (Mathf.Abs(angAcc.y) > 80f)
+        //{
+        //    //100 not Get
+        //    //10 can get
+        //    accY.text = "Get Y";
+        //}
+        //else
+        //{
+        //    accY.text = "";
+        //}
+
+        if (Mathf.Abs(angAcc.y) > 70f)
+        {            
+            accyy.text = "Get yy";
+        }
+        else
+        {
+            accyy.text = "";
+        }
+
+        //if (Mathf.Abs(angAcc.x) > 80f)
+        //{
+        //    accx.text = "Get X";
+        //}
+        //else
+        //{
+        //    accx.text = "";
+        //}
+
+        if (Mathf.Abs(angAcc.x) > 70f)
+        {
+            accxx.text = "Get XX";
+        }
+        else
+        {
+            accxx.text = "";
+        }
+
+
+
 
         // コントローラーがない or LineRendererがなければ何もしない
         if (pointer == null || _LaserPointerRenderer == null)
@@ -113,7 +164,7 @@ public class Point_Laser : MonoBehaviour
             //_LaserPointerRenderer.SetPosition(1, hitInfo.point);
 
 
-            if (Vector3.Angle(pointer.position - previousPos, hitInfo.transform.up) > 130f) { 
+            if (Vector3.Angle(pointer.position - previousPos, hitInfo.transform.up) > 130f && (Mathf.Abs(angAcc.y) > 70f || Mathf.Abs(angAcc.x) > 70f)) { 
                 audioSource.PlayOneShot(clip1);
 
 
@@ -125,11 +176,13 @@ public class Point_Laser : MonoBehaviour
                 Player.Point+= 0.005f;
 
                 Tapu.TapuEect = true;
+                //HertsParticleDesTimeEfect.hertPaDesTimeEfect = true;
+
                 return;
 
             }
 
-            else if  (Vector3.Angle(pointer.position - previousPos, - hitInfo.transform.up) > -130)
+            else if  (Vector3.Angle(pointer.position - previousPos, - hitInfo.transform.up) > -130 && (Mathf.Abs(angAcc.y) > 70f || Mathf.Abs(angAcc.x) > 70f))
             {
                 audioSource.PlayOneShot(clip1);
 
@@ -143,17 +196,20 @@ public class Point_Laser : MonoBehaviour
                 Player.Point+= 0.01f;
 
                 Tapu.TapuEect = true;
+                //HertsParticleDesTimeEfect.hertPaDesTimeEfect = true;
+
                 return;
             }
 
 
-
         }
-          else
+        else
         {
             // Rayがヒットしなかったら向いている方向にMaxDistance伸ばす
             _LaserPointerRenderer.SetPosition(1, pointerRay.origin + pointerRay.direction * _MaxDistance);
+
         }
+
 
 
         previousPos = pointer.position;

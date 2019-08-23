@@ -668,6 +668,7 @@
     <Compile Include="Assets\Scripts\bpmText.cs" />
     <Compile Include="Assets\Scripts\CamColor.cs" />
     <Compile Include="Assets\Scripts\Destoroy.cs" />
+    <Compile Include="Assets\Scripts\HertsParticleDesTimeEfect.cs" />
     <Compile Include="Assets\Scripts\Og_Player.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Point_Laser.cs" />

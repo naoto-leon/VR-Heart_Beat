@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class BeatLine : MonoBehaviour
 {
-    //[SerializeField]
-    //int Num;
 
-    //public GameObject PrefabBeatLinePoints;
-    //public GameObject[] Prefabs;
-
-    public AudioSpectrum spectrum;
+    //public AudioSpectrum spectrum;
     public GameObject[] BeatLinePoints;
 
 
     //LineRender
 
     public GameObject obj;
-    private LineRenderer lineRenderer; 
+    private LineRenderer lineRenderer;
 
+
+    public float timer;
 
     // Start is called before the first frame update
     void Start()
@@ -28,21 +25,15 @@ public class BeatLine : MonoBehaviour
         BeatLinePoints = new GameObject[transform.childCount];
 
         lineRenderer.SetWidth(.2f, .2f);
-        //Prefabs = new GameObject[Num];
-
-        //var parent = this.transform;
-
-
-        //for (int i = 0; i < Prefabs.Length; i = i + 1)
-        //{
-        //    Prefabs[i] = (GameObject)Instantiate(PrefabBeatLinePoints, new Vector3(-1.8f + i, -1f, -9f), Quaternion.identity, parent);
-        //}
 
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
+
         for (int i = 1; i < BeatLinePoints.Length; i = i + 2)
         {
             BeatLinePoints[i] = transform.GetChild(i).gameObject;
@@ -51,7 +42,24 @@ public class BeatLine : MonoBehaviour
             lineRenderer.SetPosition(i, Pos);
 
 
-            Pos.y = (spectrum.MeanLevels[i] * -120)-0.1f;
+            if (timer > WaveSpanNotMusicSc.beat)
+            {
+                timer -= WaveSpanNotMusicSc.beat;
+
+                Pos = Vector3.Lerp(Pos, new Vector3(Pos.x, Random.Range(5f,35f), Pos.z), Time.deltaTime*1);
+
+
+            }
+            else
+            {
+                Pos = Vector3.Lerp(Pos, new Vector3(Pos.x, 0f, Pos.z), Time.deltaTime*1);
+
+            }
+
+            timer += Time.deltaTime;
+
+
+            //Pos.y = (i * -120)-0.1f;
 
             BeatLinePoints[i].transform.position = Pos;
         }
@@ -64,13 +72,33 @@ public class BeatLine : MonoBehaviour
             lineRenderer.SetPosition(i, Pos);
 
 
-            Pos.y = (spectrum.MeanLevels[i] * +120)-0.1f;
+
+            if (timer > WaveSpanNotMusicSc.beat)
+            {
+                timer -= WaveSpanNotMusicSc.beat;
+
+                Pos = Vector3.Lerp(Pos, new Vector3(Pos.x, Random.Range(-5f,-35f), Pos.z), Time.deltaTime * 1f);
+
+
+            }
+            else
+            {
+                Pos = Vector3.Lerp(Pos, new Vector3(Pos.x, 0f, Pos.z), Time.deltaTime * 1f);
+
+            }
+
+            timer += Time.deltaTime;
+
+
+
+
+            //Pos.y = (i * +120)-0.1f;
 
             BeatLinePoints[i].transform.position = Pos;
         }
 
 
+ 
 
-
-    }
+}
 }

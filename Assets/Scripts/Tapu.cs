@@ -21,11 +21,6 @@ public class Tapu : MonoBehaviour
         meshRenderer = GetComponent<MeshRenderer>();
         TapuEect = false;
 
-        //Vector3 pos = trans.position;
-        //pos.y = +0.2f;
-        
-
-        //trans.position = pos;
 
     }
 

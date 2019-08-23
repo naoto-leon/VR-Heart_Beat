@@ -8,7 +8,7 @@ public class WaveSpanNotMusicSc : MonoBehaviour
     public float timer;
 
     [SerializeField]
-    public  float beat;
+    public  static float beat;
 
 
     public GameObject[] Cubes;
@@ -23,7 +23,6 @@ public class WaveSpanNotMusicSc : MonoBehaviour
     void Start()
     {
        
-
         var server = GetComponent<uOscServer>();
         server.onDataReceived.AddListener(OnDataReceived);
     }
