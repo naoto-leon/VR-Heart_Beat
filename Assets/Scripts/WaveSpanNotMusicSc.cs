@@ -55,7 +55,7 @@ public class WaveSpanNotMusicSc : MonoBehaviour
 
             beat = (60 / (float)heartBeat);
 
-            //Debug.Log (beat);
+            //Debug.Log(beat);
 
 
         }

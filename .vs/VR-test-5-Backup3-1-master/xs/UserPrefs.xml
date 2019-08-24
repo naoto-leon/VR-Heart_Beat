@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{3FFAC7FA-1C48-CB08-427A-A0425E626C0D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Point_Laser.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BeatCircle.cs">
     <Files>
       <File FileName="Assets/Scripts/SpectramSounded.cs" Line="87" Column="10" />
-      <File FileName="Assets/Scripts/Point_Laser.cs" Line="177" Column="1" />
-      <File FileName="Assets/Scripts/WaveSpanNotMusicSc.cs" Line="25" Column="8" />
+      <File FileName="Assets/Scripts/Point_Laser.cs" />
+      <File FileName="Assets/Scripts/WaveSpanNotMusicSc.cs" Line="59" Column="1" />
+      <File FileName="Assets/Scripts/BeatCircle.cs" Line="59" Column="45" />
+      <File FileName="Assets/Scripts/BeatLine.cs" Line="72" Column="46" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +22,7 @@
               <Node name="Scripts" expanded="True">
                 <Node name="Ardino" expanded="True" />
                 <Node name="Sound" expanded="True" />
-                <Node name="Point_Laser.cs" selected="True" />
+                <Node name="BeatCircle.cs" selected="True" />
               </Node>
               <Node name="uOSC-master" expanded="True">
                 <Node name="Assets" expanded="True">

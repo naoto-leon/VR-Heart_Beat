@@ -54,13 +54,15 @@ public class Point_Laser : MonoBehaviour
     public Text accyy;
     public Text accxx;
 
+    OVRInput.Controller controller;
+
     // コントローラー
     private Transform Pointer
     {
         get
         {
             // 現在アクティブなコントローラーを取得
-            var controller = OVRInput.GetActiveController();
+            controller = OVRInput.GetActiveController();
             if (controller == OVRInput.Controller.RTrackedRemote)
             {
                 return _RightHandAnchor;
@@ -92,8 +94,9 @@ public class Point_Laser : MonoBehaviour
         var pointer = Pointer;//var=transform pointer 
 
         //    //TEST KASOKUDO 
-        OVRInput.Controller activeController = OVRInput.GetActiveController();
-        Vector3 angAcc = OVRInput.GetLocalControllerAngularAcceleration(activeController);
+        //OVRInput.Controller activeController = OVRInput.GetActiveController();
+        controller = OVRInput.GetActiveController();
+        Vector3 angAcc = OVRInput.GetLocalControllerAngularAcceleration(controller);
 
         accText.text = "Acc : " + angAcc;
 
@@ -108,7 +111,7 @@ public class Point_Laser : MonoBehaviour
         //    accY.text = "";
         //}
 
-        if (Mathf.Abs(angAcc.y) > 70f)
+        if (Mathf.Abs(angAcc.y) > 30f)
         {            
             accyy.text = "Get yy";
         }
@@ -126,7 +129,7 @@ public class Point_Laser : MonoBehaviour
         //    accx.text = "";
         //}
 
-        if (Mathf.Abs(angAcc.x) > 70f)
+        if (Mathf.Abs(angAcc.x) > 30f)
         {
             accxx.text = "Get XX";
         }
@@ -164,7 +167,7 @@ public class Point_Laser : MonoBehaviour
             //_LaserPointerRenderer.SetPosition(1, hitInfo.point);
 
 
-            if (Vector3.Angle(pointer.position - previousPos, hitInfo.transform.up) > 130f && (Mathf.Abs(angAcc.y) > 70f || Mathf.Abs(angAcc.x) > 70f)) { 
+            if (Vector3.Angle(pointer.position - previousPos, hitInfo.transform.up) > 130f && (Mathf.Abs(angAcc.y) > 30f || Mathf.Abs(angAcc.x) > 30f)) { 
                 audioSource.PlayOneShot(clip1);
 
 
@@ -182,7 +185,7 @@ public class Point_Laser : MonoBehaviour
 
             }
 
-            else if  (Vector3.Angle(pointer.position - previousPos, - hitInfo.transform.up) > -130 && (Mathf.Abs(angAcc.y) > 70f || Mathf.Abs(angAcc.x) > 70f))
+            else if  (Vector3.Angle(pointer.position - previousPos, - hitInfo.transform.up) > -130 && (Mathf.Abs(angAcc.y) > 30f || Mathf.Abs(angAcc.x) > 30f))
             {
                 audioSource.PlayOneShot(clip1);
 

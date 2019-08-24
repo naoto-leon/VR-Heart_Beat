@@ -660,6 +660,7 @@
     <Compile Include="Assets\Scripts\Ardino\SerialLight.cs" />
     <Compile Include="Assets\Scripts\Ardino\ServerTest.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
+    <Compile Include="Assets\Scripts\BeatCircle.cs" />
     <Compile Include="Assets\Scripts\BeatLine.cs" />
     <Compile Include="Assets\Scripts\Box.cs" />
     <Compile Include="Assets\Scripts\boxLine.cs" />
