@@ -1,7 +1,7 @@
 # VR-test-4-Backup2-2
-VR Oculus-Go make Beatsaver 
+[VR Oculus-Go] use Arduino and Sonic_pi made game like Beatsaver 
 
-#### Ardinoで人間の心拍数を取得し、そのBPMを使ってOculus GoでBeatSaverを作りました。初めてのVR開発でわりかし手間取ったのと時間を掛けたので詳細に記録します。
+#### PulseSEnsorで人間の心拍数を取得し、ArduinoでBPM変換してSonic_piの楽曲とゲームシステムに取り込み、Oculus GoでBeatSaverのようなゲームを作りました。初めてのVR開発でわりかし手間取ったのと時間を掛けたので詳細に記録します。
 ##### [YouTube](https://youtu.be/9nsiCdtRgEo)
 ![VR_GIF1](https://user-images.githubusercontent.com/43961147/61991270-e2493480-b088-11e9-8c0b-e08919d54cd5.gif)
 
