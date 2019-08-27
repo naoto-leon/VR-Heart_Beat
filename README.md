@@ -271,8 +271,8 @@ milkkokoaはArduinoから直接通信可能な環境があり、使用例も公�
  
 ####  □ スペクトラムに合わせてParticle、シェーダーを動かす。 
 
-**当初の予定では下記の方法での音との連動方法であったが、Sonic_piを使っての実装に変わった為。
-**最終的にはplayerから取得したBPMを使っての連動にした。
+**当初の予定では下記の方法での音との連動方法であったが、Sonic_piを使っての実装に変わった為。**
+**最終的にはplayerから取得したBPMを使っての連動にした。**
 
 unityでは下記の一文でスペクトラムの取得が可能であり  
     AudioListener.GetSpectrumData(spectrum, 0, FFTWindow.Rectangular);  
