@@ -316,7 +316,8 @@ unityでは下記の一文でスペクトラムの取得が可能であり
    ビジュアルは病院や血管、血液などをイメージしている。  
    シェーダーグラフとパーティクル、ラインレンダラー、トレイルレンダラーなどの機能にoscで送ったbpmをスクリプトで絡ませる事で連動した動きを実現した。
    
-   
+![vr play3](https://user-images.githubusercontent.com/43961147/63786679-74b15200-c92d-11e9-8bca-c3d9eeea971c.gif)
+![vr play2](https://user-images.githubusercontent.com/43961147/63786701-7ed35080-c92d-11e9-960e-fdc5acfc3eae.gif)
    
    
  ##### Particleの取得はジェネリック型ではない為GetComponent(typeof(ParticleSystem))で取得。      
