@@ -255,7 +255,13 @@ milkkokoaはArduinoから直接通信可能な環境があり、使用例も公�
      }
  
  実際のコードでは130度以上で消すようにした。  
- また、荒い方法ではあるが下からの処理(下からの振り上げへの反応)はマイナスの処理で実装した。(角度及びhitinfoのベクトル)
+ 
+ また、元々oculas_goのコントローラー内にある加速度センサーを使い「振ることで判定」となるようにすることでplayerの身体を動かせる事に成功した。
+ 
+ □加速度センサーの謎に関して。　
+ 今回加速度センサーを使うに当たって、一度取得できる値をテキストで表示させてみたが、振ることでXおよびZの値が消える(横振りでも縦振りでも同様)事や
+ 横振りの値がYで縦振りの値がX等、良くわからない事が多かった。  
+ 最終的にはXおよびYの値の絶対値を参照に判定に取り込んだ事で、上手くできた。
  
  ***
  
@@ -264,6 +270,9 @@ milkkokoaはArduinoから直接通信可能な環境があり、使用例も公�
  音とのマッチング性を高める為にゲームそのものにオーディオビジュアルの側面を持たせた。　　
  
 ####  □ スペクトラムに合わせてParticle、シェーダーを動かす。 
+
+**当初の予定では下記の方法での音との連動方法であったが、Sonic_piを使っての実装に変わった為。
+**最終的にはplayerから取得したBPMを使っての連動にした。
 
 unityでは下記の一文でスペクトラムの取得が可能であり  
     AudioListener.GetSpectrumData(spectrum, 0, FFTWindow.Rectangular);  
@@ -298,8 +307,6 @@ unityでは下記の一文でスペクトラムの取得が可能であり
     }   
     
 
- 実装にはkeijiroさんのunity-audio-spectrumを利用させていただいた。　
- ##### [keijiro/unity-audio-spectrum]( https://github.com/keijiro/unity-audio-spectrum)
 
  ##### Particleの取得はジェネリック型ではない為GetComponent(typeof(ParticleSystem))で取得。      
  ##### シェーダーに関してはGetComponent<MeshRenderer>();でマテリアルにアクセスし、SetFloatでシェーダーで設定した変数を取得。
