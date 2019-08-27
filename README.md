@@ -309,14 +309,18 @@ unityでは下記の一文でスペクトラムの取得が可能であり
     
 
 
- ##### Particleの取得はジェネリック型ではない為GetComponent(typeof(ParticleSystem))で取得。      
- ##### シェーダーに関してはGetComponent<MeshRenderer>();でマテリアルにアクセスし、SetFloatでシェーダーで設定した変数を取得。
-  
   ***
   
    ### ビジュアライズに関して　
    
-   可能限り使用したParticle Shader諸々を紹介します。
+   ビジュアルは病院や血管、血液などをイメージしている。  
+   シェーダーグラフとパーティクル、ラインレンダラー、トレイルレンダラーなどの機能にoscで送ったbpmをスクリプトで絡ませる事で連動した動きを実現した。
+   
+   
+   
+   
+ ##### Particleの取得はジェネリック型ではない為GetComponent(typeof(ParticleSystem))で取得。      
+ ##### シェーダーに関してはGetComponent<MeshRenderer>();でマテリアルにアクセスし、SetFloatでシェーダーで設定した変数を取得。
 
 ***
 
