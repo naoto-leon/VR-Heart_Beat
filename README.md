@@ -2,7 +2,7 @@
 [VR Oculus-Go] use Arduino and Sonic_pi made game like Beatsaver 
 
 #### PulseSensorでプレイヤーの心拍数を取得し、ArduinoでBPM変換してSonic_piの楽曲とゲームシステムに取り込み、Oculus GoでBeatSaverのようなゲームを作りました。初めてのVR開発でわりかし手間取ったのと時間を掛けたので詳細に記録します。
-##### [実演動画](https://www.youtube.com/watch?v=PALiQXO_keg)
+##### [実演動画](https://www.youtube.com/watch?v=tZrFdnDNbas&feature=youtu.be)
 ![vr-play1](https://user-images.githubusercontent.com/43961147/63783443-fe5e2100-c927-11e9-8762-1a9112329e93.gif)
 
 
